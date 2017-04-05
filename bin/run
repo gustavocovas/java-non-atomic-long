@@ -1,0 +1,8 @@
+#!/bin/bash
+
+repetitions=$1
+
+docker run -it \
+       -v $(pwd):/data \
+       cortinico/java8-32bit \
+       ./scripts/perform.sh $repetitions

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it -v $(pwd):/data cortinico/java8-32bit javac -d tmp Principal.java
