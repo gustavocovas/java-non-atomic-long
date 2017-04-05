@@ -11,7 +11,7 @@ To compile the `.java` files, run
 ```
 The compiled `.class` files will be at `tmp` directory.
 
-#### Running ####
+## Running ##
 
 You can run the experiment with
 ```
@@ -33,6 +33,8 @@ $ ./bin/run 10
 ```
 
 Note that are less than 10 results, as the result is only reported when the bug occurs within 1 second. (What `perform.sh` does is `timeout 1 java -d32 -cp tmp Principal`)
+
+
 You can then redirect `./bin/run` to a file and use `experiment_parser.py` to analyze the results:
 ```
 $ ./bin/run 100 > experiments.log
@@ -45,8 +47,6 @@ Read 46 values, 6 unique:
 0000000000000000000000000000000011111111111111111111111111111010
 0000000000000000000000000000000011111111111111111111111111111101
 ```
-
----
 
 Pull requests are welcome.
 
